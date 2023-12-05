@@ -27,12 +27,46 @@ height: 100%;
   - `justify-content` - to align flex elements along/main axis the current line of flex element.
 
 - `gap` - the gap between elements.
-- `z-index` - to specify the priority of the items. 9999 is the top most priority, can be used only with absolute positioning, relative positioning, flex and grid positioning.
+- `z-index` - to specify the priority of the items. any higher number is the top most priority, can be used only with absolute positioning, relative positioning, flex and grid positioning.
 
 - `white-space:nowrap` - to display text without breaking the line.
 
 - `user-select: none` - to disable user interaction.
-- `user-select: all` - to automatically select all whie clicking the element`
+- `user-select: all` - to automatically select all whie clicking the element
+
+### Input
+
+To remove all the default styles:
+
+- `background-color: transparent`
+- `border: none`
+- `outline: none`
+
+- `input::placeholder` - style the placeholder text
+
+## Responsive web desgin
+
+- So far we have targeted the landscape screen (laptop, desktop) which is predominantly width aligned. But we also have to view our webpages in other devices, such that our design is adaptive to the device's width and height.
+
+  - Mobile phones are predominantly height aligned.
+
+- @media (max-width:500px) --> This is written to target the screen of mobile devices.
+
+## Handling Images
+
+- for images:
+
+  - background-image: url()
+    - background-size: cover;
+    - background-fit - center;
+  - <img src="img.jpg"/>
+    - object-fit: center;
+
+## Extra
+
+- `&copy` - to display copyright symbol.
+- transition - will not be applied when the element has display properties.
+  - need to use opacity for transition effect.
 
 @@TODO:
 
